@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guss the number</title>
+    <style>
+        body{
+            background-color: #212121;
+            color: #fff;
+        }
+        .wrapper{
+            top: 3ovmin;
+            width: 60%;
+            min-height: 40vh;
+            border-radius: 10%;
+            margin: 160px auto 20px;
+            padding: 20px 40px 10px;
+            background-color:rgb(68, 65, 65);
+            text-align: center;
+            cursor: pointer;
+            font-size: larger;
+        }
+        #subt{
+            cursor: pointer;
+            background-color: darkgrey;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Number gussing game</h1>
+        <p>try to guss a ramdom number between 1 - 100 .</p>
+        <p>you have 10 sttempts to guss the right number.</p>
+    </br>
+    <form class="form">
+        <label for="gussField" id="guess">Guss the number : </label>
+        <input type="text" id="gussField" class="gussField">
+        <input type="submit" id="subt" value="submit Guess" class="lowOrHig">
+    </form>
+    <div class="resultPass">
+        <p>previous Guesses : <span class="guesses"></span></p>
+        <p>Guesses Renaining : <span class="lastResult">10</span></p>
+        <p class="lowOrHigh"></p>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
